@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function find(){
+            document.write("区间中符合条件的数有(输出格式：10个1行):<br>")
+            var num=1000;
+            var count=0;
+            var sum=0;
+            for(;num<10000;num++){
+                if(!(num%17)&&!(num%13)){
+                    count++;
+                    sum+=num;
+                    document.write(num+" ");
+                    if(count%10===0&&count!=0){
+                    document.write("<br>");
+                }
+                }
+                
+                    
+            }
+            document.write("<br>")
+            document.write("区间中符合条件的数共有"+count+"个"+"<br>");
+            document.write("区间中符合条件的数的累加和为"+sum);
+        }
+    </script>
+</head>
+<body>
+    <h2>
+        找出1000~9999之间能够被17和13整除的整数的个数及累加和
+    </h2>
+    <script>
+        find();
+    </script>
+</body>
+</html>
